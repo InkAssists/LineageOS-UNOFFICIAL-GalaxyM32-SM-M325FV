@@ -25,9 +25,13 @@ Latest: `lineage-24.0-20261117-UNOFFICIAL-m32` → [Releases](../../releases)
 ## Install
 
 1. TWRP 3.6.11 (Mujammil, XDA 4800621), boot into recovery
-2. `multidisabler` in the TWRP terminal
+2. Coming from stock firmware only: flash `multidisabler.zip` once in TWRP — it removes
+   Samsung's verity/force-encrypt flags. Not needed on later clean flashes or updates.
 3. **Format Data**
 4. Flash the zip from `/data/local/tmp`, reboot
+
+Detailed steps (unlock, download mode, TWRP, clean flash) are in the m32f repository README
+and apply the same way here.
 
 **Never relock the bootloader** (hardbrick).
 
