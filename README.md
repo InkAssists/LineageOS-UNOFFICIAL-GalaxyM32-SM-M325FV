@@ -24,7 +24,9 @@ Latest: `lineage-24.0-20261117-UNOFFICIAL-m32` → [Releases](../../releases)
 
 ## Install
 
-1. TWRP 3.6.11 (Mujammil, XDA 4800621), boot into recovery
+1. Flash TWRP 3.6.11 (Mujammil, XDA 4800621) **together with the vbmeta disabler** in
+   download mode (Odin: recovery in AP, vbmeta in USERDATA; heimdall: `--recovery` and
+   `--vbmeta`) — one-time, otherwise the unsigned recovery will not boot
 2. Coming from stock firmware only: flash `multidisabler.zip` once in TWRP — it removes
    Samsung's verity/force-encrypt flags. Not needed on later clean flashes or updates.
 3. **Format Data**
